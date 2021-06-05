@@ -42,7 +42,7 @@ function draw() {
     //changing dog image-
     dog.addImage(happyDog);
     //calling writeStock function -
-    writeStock();
+    writeStock(foodS);
   }
 
   //drawing all the sprites - 
