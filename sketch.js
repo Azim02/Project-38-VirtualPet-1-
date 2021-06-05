@@ -62,6 +62,13 @@ function draw() {
   text("Food remaining : " + foodS, 150, 150);
 }
 
+//readStock function -
+
+function readStock(data)
+{
+    foodS = data.val();
+}
+
 //writeStock function - 
 
 function writeStock(x)
@@ -77,11 +84,4 @@ function writeStock(x)
   database.ref('/').update({
     Food:x
   })
-}
-
-//readStock function -
-
-function readStock(data)
-{
-    foodS = data.val();
 }
